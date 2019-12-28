@@ -7,28 +7,18 @@
     <title>5회 EBL 발제자 가이드</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap" rel="stylesheet">
-    <style>
-        * {font-family: 'Noto Sans KR', sans-serif; font-size: 1.01em; text-align: center;}
-        body {margin: 0; padding: 0;}
-        section {margin: auto; max-width: 600px;}
-        video {width: 100%;}
-        img {max-width: 600px;}
-        h1 {font-size: 46px;}
-        div {margin-bottom: 50px;}
-        hr {width: 100px; margin-top: 40px; margin-bottom: 40px;}
-        button {cursor: pointer; justify-content: center; padding-bottom: calc(.5em - 1px); padding-left: 1em; padding-right: 1em; padding-top: calc(.5em - 1px); text-align: center; white-space: nowrap; border: 1px solid transparent; background-color: #ebfffc; color: #00947e;}
-        a {color: #000;}
-        .hero {width: 100vw; height: 100vh; min-height: 400px; display: flex; justify-content: center; flex-direction: column; align-items: center;}
-        .hero h1 {padding: 0; margin: 0; font-size: 5em;}
-        .notice {background-color: #ff7075; color: #fff; padding: 10px;}
-        .notice .title {text-align: center; font-size: 30px; margin-top: 10px; margin-bottom: 15px;}
-        .notice .body {margin: 10px;}
-        .heavy {font-weight: 500; font-family: 'Roboto', sans-serif;}
-        .light {font-weight: 100; font-family: 'Roboto', sans-serif;}
-        li {text-decoration: none; list-style: none;}
-    </style>
+    <link href="https://sd-conference.github.io/export/common.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="style.css">-->
 </head>
 <body>
+    <div class="top">
+        <span class="logo" id="root" onclick="call('root')">학술제</span>
+        <span class="child" id="forum" onclick="call('forum')">FORUM</span>
+        <span class="child now" id="ebl" onclick="call('ebl')">EBL</span>
+        <span class="child" id="books" onclick="call('books')">북페스티벌</span>
+        <span class="child" id="fcs" onclick="call('fcs')">꼬독/FCS</span>
+        <span class="fix" id="fix" onclick="call('fix')">FIX SDOK.GA</span>
+    </div>
     <section class="hero">
         <h1><span class="heavy">E</span><span class="light">NGLISH</span><br><span class="heavy">B</span><span class="light">ASED</span><br><span class="heavy">L</span><span class="light">ECTURE</span></h1>
     </section>
@@ -45,7 +35,7 @@
             <p class="body">드라이브 권한 설정 변경하지 마세요. 다른 학생들이 드라이브에 접근을 못합니다.</p>
             <p class="body">12월 25일 (수) 자정까지 원고/최종본을 업로드해주세요.</p>
     </div>
-    <section>
+    <section class="body-content">
         <hr>
         <div>
             <p>아래 버튼을 통해 공유 드라이브에 접속하고 구글 서비스에 로그인합니다.</p>
@@ -72,5 +62,6 @@
             © SDEBL. 2019. | <a href="mailto:ebl@sdok.ga">ebl@sdok.ga</a>
         </div>
     </section>
+    <script src="https://sd-conference.github.io/export/direction.js"></script>
 </body>
 </html>
