@@ -26,7 +26,6 @@
     <section class="hero">
         <h1><span class="heavy">E</span><span class="light">NGLISH</span><br><span class="heavy">B</span><span class="light">ASED</span><br><span class="heavy">L</span><span class="light">ECTURE</span></h1>
         <div class="progress-bar">
-            <div class="progress-bar inner" id="progress-bar"></div>
         </div>
     </section>
     <section>
@@ -70,10 +69,6 @@
     </section>
     <script src="https://sd-conference.github.io/export/direction.js"></script>
     <script>
-    target = document.getElementById('progress-bar')
-    date = ['Dec 23, 2019 00:00:00', 'Jan 7, 2020 00:00:00']
-
-    target.style = 'width: ' + (((new Date().getTime() - new Date(date[0]).getTime()) / (new Date(date[1]).getTime() - new Date(date[0]).getTime())) * 300) + 'px;'
     </script>
 </body>
 </html>
